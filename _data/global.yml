@@ -2,8 +2,8 @@
 title: 'Riverina Safes & Locks'
 description: 'Locksmith in Wagga and Riverina'
 #url: 'https://www.safesandlocks.com.au/' # the base hostname & protocol for your site
-#url: 'https://safesandlocks.github.io/safesandlocks.com/' # gh-pages default url
-url: 'http://192.168.1.130:4000/' # dev
+url: 'https://safesandlocks.github.io/safesandlocks.com/' # gh-pages default url
+#url: 'http://127.0.0.1:4000/' # dev
 footer_text: 'Copyright &copy; 2015 Riverina Safes & Locks. All rights reserved.'
 
 # Admin Settings
