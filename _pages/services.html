@@ -1,0 +1,34 @@
+---
+layout: default
+title: Services
+permalink: /services/
+---
+
+<div class="container inner">
+
+    <section id="hero">
+        <header>
+            <h1>Our Services</h1>
+
+            <p>Please find below an overview of our most popular security services.</p>
+        </header>
+    </section>
+
+    <section id="products">
+        <div class="container inner-md">
+            {% for service in site.data.services %}
+            {% assign loopindex = forloop.index %}
+            <div class="row{% if loopindex>1 %} inner-top-md{% endif %}">
+
+                <div class="col-sm-12 inner-top-xs inner-left-xs">
+                    <h2>{{ service.name }}</h2>
+
+                    <p>{{ service.description }}</p>
+                </div>
+
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+
+</div>

@@ -1,0 +1,48 @@
+---
+layout: default
+title: Brands
+permalink: /brands/
+---
+
+<section id="brands">
+
+    <div class="container inner">
+        <div class="row">
+            <div class="col-md-8 col-sm-9 center-block text-center">
+                <header>
+                    <h1>Our Brands</h1>
+                    <p>Please find below an overview of our most popular brands.</p>
+                </header>
+            </div>
+        </div>
+    </div>
+
+    <div class="container inner-bottom">
+        <div class="row">
+            <div class="col-sm-12 brands">
+
+                <ul class="items col-4">
+
+                    {% for brand in site.data.brands %}
+                    <li class="item thumb interactive">
+                        <a href="{{ brand.url }}" target="_blank">
+                            <figure>
+                                <figcaption class="text-overlay">
+                                    <div class="info">
+                                        <h4>{{ brand.name }}</h4>
+                                        <p>{{ brand.description }}</p>
+                                    </div>
+                                </figcaption>
+                                <img src="{{ site.data.global.url }}{{ brand.image }}" alt="{{ brand.name }}">
+                            </figure>
+                        </a>
+                    </li>
+                    {% endfor %}
+
+                </ul>
+
+            </div>
+        </div>
+    </div>
+
+</section>

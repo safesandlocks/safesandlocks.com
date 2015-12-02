@@ -3,8 +3,9 @@ title: 'Riverina Safes & Locks'
 #url: 'https://www.safesandlocks.com.au/' # the base hostname & protocol for your site
 url: 'https://safesandlocks.github.io/safesandlocks.com.au/' # gh-pages default url
 #url: 'http://127.0.0.1:4000/' # dev
-footer_text: 'Copyright &copy; 2015 Riverina Safes & Locks. All rights reserved.'
 
-# Admin Settings
-admin_name: 'Brett Measday'
-admin_email: 'brett@safesandlocks.com.au'
+# Contact Settings
+contact_email: 'info@safesandlocks.com.au'
+contact_phone: '02 6921 3517'
+contact_fax: '02 6921 6768'
+contact_address: 13 Berry St, Wagga Wagga, NSW 2650

@@ -1,7 +1,7 @@
 main:
     - { url: '', text: 'Home' }
-    - { url: 'products/', text: 'Products' }
     - { url: 'services/', text: 'Services' }
+    - { url: 'products/', text: 'Products' }
     - { url: 'brands/', text: 'Brands' }
     - { url: 'about/', text: 'About' }
     - { url: 'contact/', text: 'Contact' }

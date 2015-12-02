@@ -1,0 +1,38 @@
+---
+layout: default
+title: Products
+permalink: /products/
+---
+
+<div class="container inner">
+
+    <section id="hero">
+        <header>
+            <h1>Our Products</h1>
+
+            <p>Please find below an overview of our most popular security products.</p>
+        </header>
+    </section>
+
+    <section id="products">
+        <div class="container inner-md">
+            {% for product in site.data.products %}
+            {% assign loopindex = forloop.index %}
+            <div class="row{% if loopindex>1 %} inner-top-md{% endif %}">
+
+                <div class="col-sm-2 inner-right-xs text-right">
+                    <figure><img src="{{ site.data.global.url }}{{ product.image }}" alt="{{ product.name }}"></figure>
+                </div>
+
+                <div class="col-sm-10 inner-top-xs inner-left-xs">
+                    <h2>{{ product.name }}</h2>
+
+                    <p>{{ product.description }}</p>
+                </div>
+
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+
+</div>
