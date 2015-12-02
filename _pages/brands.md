@@ -10,9 +10,9 @@ permalink: /brands/
     <div class="col-xs-12 col-md-3 brand">
         <div class="thumbnail-container">
             {% if brand.url %}
-                <a class="thumbnail" href="{{ brand.url }}"><img src="{{ brand.image }}" alt="{{ brand.name }} - {{ brand.description }}"></a>
+                <a class="thumbnail" href="{{ brand.url }}"><img src="{{ site.data.global.url }}{{ brand.image }}" alt="{{ brand.name }} - {{ brand.description }}"></a>
             {% else %}
-                <img class="thumbnail" src="{{ brand.image }}" alt="{{ brand.name }} - {{ brand.description }}">
+                <img class="thumbnail" src="{{ site.data.global.url }}{{ brand.image }}" alt="{{ brand.name }} - {{ brand.description }}">
             {% endif %}
         </div>
     </div>

@@ -11,7 +11,7 @@ permalink: /products/
         <h2 class="panel-title">{{ product.name }}</h2>
     </div>
     <div class="panel-body">
-        <img class="pull-right" src="{{ product.image }}">
+        <img class="pull-right" src="{{ site.data.global.url }}{{ product.image }}">
         {{ product.description }}
     </div>
 </div>
