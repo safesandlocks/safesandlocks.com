@@ -32,12 +32,10 @@
     </aside>
     {% endif %}
     <p class="lead">
-        {% if page.lead_text %}
-            {{ page.lead_text }}
-        {% elsif post.lead_text %}
-            {{ post.lead_text }}
-        {% else %}
-            {{ site.data.global.description }}
+        {% if page.description %}
+            {{ page.description }}
+        {% elsif post.description %}
+            {{ post.description }}
         {% endif %}
     </p>
 </div>
