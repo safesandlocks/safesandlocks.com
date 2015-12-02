@@ -838,28 +838,31 @@ $(document).ready(function () {
 
 $(document).ready(function () {
 
-    function initialize() {
-        var center = new google.maps.LatLng(-35.115748, 147.372873);
-        var map = new google.maps.Map(document.getElementById('map'), {
-            zoom: 16,
-            center: center,
-            disableDefaultUI: true,
-            draggable: false,
-            zoomControl: false,
-            scrollwheel: false
-        });
-        var marker = new google.maps.Marker({
-            position: center,
-            map: map,
-            title: 'Riverina Safes & Locks'
+    var canvas = document.getElementById('map');
+    if (canvas) {
+        function initialize() {
+            var center = new google.maps.LatLng(-35.115748, 147.372873);
+            var map = new google.maps.Map(canvas, {
+                zoom: 16,
+                center: center,
+                disableDefaultUI: true,
+                draggable: false,
+                zoomControl: false,
+                scrollwheel: false
+            });
+            var marker = new google.maps.Marker({
+                position: center,
+                map: map,
+                title: 'Riverina Safes & Locks'
+            });
+        }
+
+        google.maps.event.addDomListener(window, 'load', initialize);
+
+        $('[id*="modal-contact"]').on('shown.bs.modal', function () {
+            initialize();
         });
     }
-
-    google.maps.event.addDomListener(window, 'load', initialize);
-
-    $('[id*="modal-contact"]').on('shown.bs.modal', function () {
-        initialize();
-    });
 
 });
 
@@ -878,73 +881,73 @@ $(document).ready(function () {
  /*===================================================================================*/
 
 /*
-$(document).ready(function () {
+ $(document).ready(function () {
 
-    $('#contactform, #commentform').validate({
+ $('#contactform, #commentform').validate({
 
-        errorPlacement: function (error, element) {
-            $(element).attr({
-                'placeholder': error.html()
-            });
-        },
+ errorPlacement: function (error, element) {
+ $(element).attr({
+ 'placeholder': error.html()
+ });
+ },
 
-        focusInvalid: false,
+ focusInvalid: false,
 
-        rules: {
-            name: {
-                required: true,
-                minlength: 2
-            },
-            email: {
-                required: true,
-                email: true
-            },
-            message: {
-                required: true,
-                minlength: 10
-            }
-        },
+ rules: {
+ name: {
+ required: true,
+ minlength: 2
+ },
+ email: {
+ required: true,
+ email: true
+ },
+ message: {
+ required: true,
+ minlength: 10
+ }
+ },
 
-        messages: {
-            name: {
-                required: 'Please enter your name!',
-                minlength: jQuery.format('Name requires at least {0} characters!')
-            },
-            email: {
-                required: 'Please enter your email!',
-                email: 'Please enter a valid email!'
-            },
-            message: {
-                required: 'Please enter a message!',
-                minlength: jQuery.format('Message requires at least {0} characters!')
-            }
-        },
+ messages: {
+ name: {
+ required: 'Please enter your name!',
+ minlength: jQuery.format('Name requires at least {0} characters!')
+ },
+ email: {
+ required: 'Please enter your email!',
+ email: 'Please enter a valid email!'
+ },
+ message: {
+ required: 'Please enter a message!',
+ minlength: jQuery.format('Message requires at least {0} characters!')
+ }
+ },
 
-        submitHandler: function (form) {
-            $('#contactform .btn-submit').html('Sending message ...');
-            $('#commentform .btn-submit').html('Sending comment ...');
-            $(form).ajaxSubmit({
-                success: function (responseText, statusText, xhr, $form) {
-                    $(form).delay(1300).slideUp('fast');
-                    $('#response').html(responseText).hide().delay(1300).slideDown('fast');
-                }
-            });
-            return false;
-        }
+ submitHandler: function (form) {
+ $('#contactform .btn-submit').html('Sending message ...');
+ $('#commentform .btn-submit').html('Sending comment ...');
+ $(form).ajaxSubmit({
+ success: function (responseText, statusText, xhr, $form) {
+ $(form).delay(1300).slideUp('fast');
+ $('#response').html(responseText).hide().delay(1300).slideDown('fast');
+ }
+ });
+ return false;
+ }
 
-    });
+ });
 
-});
-*/
+ });
+ */
 
-$(function() {
+$(function () {
 
     $('#contactForm').find('input,textarea').jqBootstrapValidation({
         preventSubmit: true,
-        submitError: function($form, event, errors) {
+        submitError: function ($form, event, errors) {
             // additional error messages or events
         },
-        submitSuccess: function($form, event) {
+        submitSuccess: function ($form, event) {
             // disable submit button
             $form.find(":submit").attr("disabled", true);
             // prevent default submit behaviour
@@ -963,7 +966,7 @@ $(function() {
                 dataType: 'json',
                 data: $form.serialize(),
                 cache: false,
-                success: function() {
+                success: function () {
                     // success message
                     $('#success').html('<div class="alert alert-success">');
                     $('#success > .alert-success').html('<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>');
@@ -974,7 +977,7 @@ $(function() {
                     // enable submit button
                     $form.find(":submit").removeAttr("disabled");
                 },
-                error: function() {
+                error: function () {
                     // fail message
                     $('#success').html('<div class="alert alert-danger">');
                     $('#success > .alert-danger').html('<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>');
@@ -985,13 +988,13 @@ $(function() {
                 }
             })
         },
-        filter: function() {
+        filter: function () {
             return $(this).is(':visible');
         }
     });
 
     // reset errors
-    $('#contactForm').find('input,textarea').focus(function() {
+    $('#contactForm').find('input,textarea').focus(function () {
         $('#success').html('');
     });
 
