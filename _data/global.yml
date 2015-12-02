@@ -1,10 +1,12 @@
 # Site Settings
-title: 'Scotch Jekyll Bootstrap'
-description: 'An Open-Source Bootstrap 3 Jekyll Theme by Scotch'
-url: 'http://scotch-io.github.io' # the base hostname & protocol for your site
-footer_text: 'This text is footer text. Footer text goes here.'
+title: 'Riverina Safes & Locks'
+description: 'Locksmith in Wagga and Riverina'
+#url: 'https://www.safesandlocks.com.au/' # the base hostname & protocol for your site
+url: 'https://safesandlocks.github.io/safesandlocks.com/' # gh-pages default url
+#url: 'http://127.0.0.1:4000/' # dev
+footer_text: 'Copyright &copy; 2015 Riverina Safes & Locks. All rights reserved.'
 
 # Admin Settings
-admin_name: 'Nicholas Cerminara'
-admin_email: 'nick@scotch.io'
+admin_name: 'Brett Measday'
+admin_email: 'brett@safesandlocks.com.au'
 
