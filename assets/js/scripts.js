@@ -844,6 +844,8 @@ $(document).ready(function () {
             zoom: 16,
             center: center,
             disableDefaultUI: true,
+            draggable: false,
+            zoomControl: false,
             scrollwheel: false
         });
         var marker = new google.maps.Marker({
