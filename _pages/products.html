@@ -4,16 +4,17 @@ title: Products
 permalink: /products/
 ---
 
-<div class="container inner">
-
-    <section id="hero">
+<section id="hero" class="light-bg">
+    <div class="container inner">
         <header>
             <h1>Our Products</h1>
 
             <p>Please find below an overview of our most popular security products.</p>
         </header>
-    </section>
+    </div>
+</section>
 
+<div class="container">
     <section id="products">
         <div class="container inner-md">
             {% for product in site.data.products %}
@@ -34,5 +35,4 @@ permalink: /products/
             {% endfor %}
         </div>
     </section>
-
 </div>

@@ -4,16 +4,17 @@ title: Services
 permalink: /services/
 ---
 
-<div class="container inner">
-
-    <section id="hero">
+<section id="hero" class="light-bg">
+    <div class="container inner">
         <header>
             <h1>Our Services</h1>
 
             <p>Please find below an overview of our most popular security services.</p>
         </header>
-    </section>
+    </div>
+</section>
 
+<div class="container">
     <section id="products">
         <div class="container inner-md">
             {% for service in site.data.services %}
@@ -30,5 +31,4 @@ permalink: /services/
             {% endfor %}
         </div>
     </section>
-
 </div>
