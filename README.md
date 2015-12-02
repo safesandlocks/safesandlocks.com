@@ -1,15 +1,16 @@
-# Bootstrap 3 Starter Theme for Jekyll
+# Riverina Safes & Locks
 
-![Bootstrap 3 Jekyll](https://scotch.io/wp-content/uploads/2015/10/bootstrap-plus-jekyll.png)
-
-* [Demo](http://scotch-io.github.io)
+* [Official Website](https://www.safesandlocks.com.au)
+* [GitHub Pages Website](https://safesandlocks.github.io/safesandlocks.com.au/)
 * [Read the Jekyll Tutorial](https://scotch.io/tutorials/getting-started-with-jekyll-plus-a-free-bootstrap-3-starter-theme)
 
-## WTF?
+## About
 
-Jekyll is a simple and blog-aware static site generator built in Ruby. In laymen terms, it's just a tool to let you have **all the cool features of a full-blown CMS without having to worry about managing a database**. This means hosting is *extremely easy* and *scalable* since all you're doing is managing a bunch of files.
+This is the website for [safesandlocks.com.au](https://www.safesandlocks.com.au).
 
-This is just a starter theme!
+The website is powered by [Jekyll](https://jekyllrb.com/), which is a simple and blog-aware static site generator built in Ruby. In laymen terms, it's just a tool to let you have **all the cool features of a full-blown CMS without having to worry about managing a database**. This means hosting is *extremely easy* and *scalable* since all you're doing is managing a bunch of files.
+
+The website was forked from [Scotch Jekyll Bootstrap](https://scotch.io/tutorials/getting-started-with-jekyll-plus-a-free-bootstrap-3-starter-theme), which is a great starter theme with very helpful documentation.
 
 
 ## Getting Started
@@ -17,14 +18,20 @@ This is just a starter theme!
 To start coding away, first clone this repo...
 
 ```
-git clone https://github.com/scotch-io/scotch-io.github.io my-blog
-cd my-blog
+git clone https://github.com/safesandlocks/safesandlocks.com.au safesandlocks.com.au
+cd safesandlocks.com.au
 ```
 
 Then run Jekyll (if you don't have Jekyll installed, see the tutorial or docs):
 
 ```
 jekyll serve
+```
+
+Some advanced Jekyll command line options:
+
+```
+jekyll serve --host 0.0.0.0 --port 4000 --watch --force_polling
 ```
 
 Change `url` in `_data/global.yml` to:
@@ -46,6 +53,7 @@ Read the tutorial!
 ## MIT License
 
 Copyright (c) 2015-2016 Nicholas Cerminara, scotch.io, LLC
+Copyright (c) 2015-2016 Brett O'Donnell, http://mrphp.com.au
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
