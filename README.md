@@ -4,6 +4,7 @@
 * [GitHub Pages Website](https://safesandlocks.github.io/safesandlocks.com.au/)
 * [Read the Jekyll Tutorial](https://scotch.io/tutorials/getting-started-with-jekyll-plus-a-free-bootstrap-3-starter-theme)
 
+
 ## About
 
 This is the website for [safesandlocks.com.au](https://www.safesandlocks.com.au).
@@ -11,6 +12,8 @@ This is the website for [safesandlocks.com.au](https://www.safesandlocks.com.au)
 The website is powered by [Jekyll](https://jekyllrb.com/), which is a simple and blog-aware static site generator built in Ruby. In laymen terms, it's just a tool to let you have **all the cool features of a full-blown CMS without having to worry about managing a database**. This means hosting is *extremely easy* and *scalable* since all you're doing is managing a bunch of files.
 
 The website was forked from [Scotch Jekyll Bootstrap](https://scotch.io/tutorials/getting-started-with-jekyll-plus-a-free-bootstrap-3-starter-theme), which is a great starter theme with very helpful documentation.
+
+The website makes use of the [Reen Bootstrap3 Theme](https://wrapbootstrap.com/theme/reen-made-for-designers-one-multi-page-WB00PN23G), which contains documentation on html elements that are available to be added.
 
 
 ## Getting Started
@@ -41,13 +44,6 @@ http://127.0.0.1:4000
 ```
 
 Start coding.
-
-
-
-## Docs
-
-Read the tutorial!
-
 
 
 ## MIT License
