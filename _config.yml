@@ -8,7 +8,7 @@ collections: null
 
 # Handling Reading
 safe:         false
-include:      [".htaccess"]
+include:      ["_pages"]
 exclude:      []
 keep_files:   [".git", ".svn"]
 encoding:     "utf-8"
@@ -67,6 +67,3 @@ kramdown:
     coderay_tab_width:         4
     coderay_bold_every:        10
     coderay_css:               style
-
-
-include: ['_pages']
