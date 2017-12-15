@@ -46,6 +46,12 @@ http://127.0.0.1:4000
 Start coding.
 
 
+## GH-Pages Build Errors
+
+- https://help.github.com/articles/troubleshooting-github-pages-builds/
+- https://help.github.com/articles/viewing-jekyll-build-error-messages/
+
+
 ## MIT License
 
 Copyright (c) 2015-2016 Nicholas Cerminara, scotch.io, LLC
